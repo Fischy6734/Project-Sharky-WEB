@@ -1,108 +1,140 @@
 <!DOCTYPE html>
-<head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" type="text/css" href="Style.css" /> 
-    <title></title>
-</head>
-
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Project Sharky</title>
+    <title>Project Sharky Team</title>
     <style>
         body {
-            font-family: Arial, sans-serif;
+            background-color: #121212;
+            color: #fff;
+            font-family: 'Courier New', Courier, monospace;
             margin: 0;
             padding: 0;
-            background-color: #f0f8ff;
-            color: #333;
-        }
-        header {
-            background-color: #0077cc;
-            color: white;
-            padding: 20px;
-            text-align: center;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            flex-direction: column;
         }
         h1 {
-            margin: 0;
-            font-size: 2.5em;
-        }
-        p {
-            font-size: 1.2em;
-            margin: 20px;
-        }
-        .container {
-            max-width: 800px;
-            margin: 20px auto;
+            font-size: 3em;
+            margin-bottom: 20px;
             text-align: center;
+            text-transform: uppercase;
+            letter-spacing: 5px;
+            color: #00ffcc;
         }
-        .download-button {
-            display: inline-block;
-            margin-top: 20px;
-            padding: 15px 30px;
+        .team {
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+        }
+        .team-member {
             font-size: 1.5em;
-            color: white;
-            background-color: #0077cc;
-            text-decoration: none;
+            position: relative;
+            padding: 10px 20px;
+            border: 2px solid #00ffcc;
+            border-radius: 10px;
+            cursor: pointer;
+            transition: 0.3s ease-in-out;
+        }
+        .team-member:hover {
+            background-color: #00ffcc;
+            color: #121212;
+        }
+        .team-member::after {
+            content: '';
+            position: absolute;
+            top: -5px;
+            left: -5px;
+            right: -5px;
+            bottom: -5px;
+            background-color: rgba(0, 255, 204, 0.3);
+            border-radius: 15px;
+            z-index: -1;
+            opacity: 0;
+            transition: opacity 0.3s ease-in-out;
+        }
+        .team-member:hover::after {
+            opacity: 1;
+        }
+        .team-member span {
+            visibility: hidden;
+            position: absolute;
+            top: 100%;
+            left: 50%;
+            transform: translateX(-50%);
+            background-color: #00ffcc;
+            color: #121212;
+            padding: 5px 10px;
             border-radius: 5px;
-            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-            transition: background-color 0.3s ease, box-shadow 0.3s ease;
+            font-size: 1em;
+            white-space: nowrap;
+            margin-top: 10px;
         }
-        .download-button:hover {
-            background-color: #005fa3;
-            box-shadow: 0 6px 8px rgba(0, 0, 0, 0.15);
+        .team-member:hover span {
+            visibility: visible;
         }
-        footer {
-            margin-top: 30px;
-            padding: 10px;
-            background-color: #f0f0f0;
-            text-align: center;
-            font-size: 0.9em;
+        .team-member.m12 span {
+            content: 'Coding and Stuff';
+        }
+        .team-member.fischybigpants span {
+            content: 'Adding Stuff and Modeling';
+        }
+        .team-member.whafle span {
+            content: 'Adding Stuff to the Game';
+        }
+        .team-member.nightmair span {
+            content: 'Modeling';
+        }
+        .download-btn {
+            margin-top: 40px;
+            padding: 15px 40px;
+            background-color: #00ffcc;
+            color: #121212;
+            border: none;
+            border-radius: 10px;
+            font-size: 1.5em;
+            cursor: pointer;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            box-shadow: 0 0 10px rgba(0, 255, 204, 0.7);
+            transition: 0.3s ease-in-out;
+        }
+        .download-btn:hover {
+            background-color: #121212;
+            color: #00ffcc;
+            box-shadow: 0 0 20px rgba(0, 255, 204, 0.9);
         }
     </style>
 </head>
 <body>
-    <header>
-        <h1>Project Sharky</h1>
-        <p>Welcome to the official page for Project Sharky!</p>
-    </header>
-    <div class="container">
-        <p>Stay updated with the latest news and updates about the game.</p>
-        <p>Download the latest version of Project Sharky below:</p>
-        <h1>bata 0.2</h1>
-        
 
-<a id="buttone4644dcd389e4095899da57d962cb1f0" style="text-decoration:none;background:#0091ff;font-size:18px;font-family:Cursive;cursor:pointer;color:#ffffff;padding:6px 38px;border-color:#053ad6;border-style:ridge;border-radius:5px;border-width:1px" target="_blank" href="https://drive.google.com/uc?export=download&id=1FNWm6DrgtkNVaEW6Dv3zh6c9xrPwtBki">Download</a>
-<style>
-    #buttone4644dcd389e4095899da57d962cb1f0:hover {
-        background-color: #002aff !important;
-        color: #000000 !important;
-    }
-</style>
+    <h1>Project Sharky</h1>
 
-        <!-- LikeBtn.com BEGIN -->
-<span class="likebtn-wrapper" data-identifier="item_1"></span>
-<script>(function(d,e,s){if(d.getElementById("likebtn_wjs"))return;a=d.createElement(e);m=d.getElementsByTagName(e)[0];a.async=1;a.id="likebtn_wjs";a.src=s;m.parentNode.insertBefore(a, m)})(document,"script","//w.likebtn.com/js/w/widget.js");</script>
-<!-- LikeBtn.com END -->
-
-        <h2>what we are working on: revamp of the whole map and a monster for the new horror map.</h2>
-
-        <h2>Update bata 0.2: we fixed some bugs lighting and added a new shop aria and added a few cosmetics and a mod vent.</h2>
-
-        <h3>M12, WAFFLE, AIDEN, NIGHTMARE, and FISCHYBIGPANTS.</h3>
-
-        <h4>M12: just some code and stuff</h4>
-        <h4>WAFFLE: adding stuff and working on the game</h4>
-        <h4>NIGHTMARE: moddling</h4>
-        <h4>FISCHYBIGPANTS: adding stuff moddling and working on the game</h4>
-        
+    <div class="team">
+        <div class="team-member m12">
+            m12
+            <span>Coding and Stuff</span>
+        </div>
+        <div class="team-member fischybigpants">
+            Fischybigpants
+            <span>Adding Stuff and Modeling</span>
+        </div>
+        <div class="team-member whafle">
+            Whafle
+            <span>Adding Stuff to the Game</span>
+        </div>
+        <div class="team-member nightmair">
+            Nightmair
+            <span>Modeling</span>
+        </div>
     </div>
-    <footer>
-        &copy; 2025 Project Sharky. All Rights Reserved.
-    </footer>
+
+    <a href="YOUR_DOWNLOAD_LINK_HERE" target="_blank">
+        <button class="download-btn">Download Now</button>
+    </a>
+
 </body>
 </html>
-
