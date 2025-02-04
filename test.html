@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project Sharky Team</title>
+    <style>
+        body {
+            background-color: #121212;
+            color: #fff;
+            font-family: 'Courier New', Courier, monospace;
+            margin: 0;
+            padding: 20px; /* Added padding for better spacing */
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            min-height: 100vh; /* Ensures the body takes full height */
+            overflow-y: auto; /* Allows scrolling */
+        }
+        h1 {
+            font-size: 3em;
+            margin-bottom: 20px;
+            text-align: center;
+            text-transform: uppercase;
+            letter-spacing: 5px;
+            color: #00ffcc;
+        }
+        .team {
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            flex-wrap: wrap; /* Allows wrapping of team members */
+        }
+        .team-member {
+            font-size: 1.5em;
+            position: relative;
+            padding: 10px 20px;
+            border: 2px solid #00ffcc;
+            border-radius: 10px;
+            cursor: pointer;
+            transition: 0.3s ease-in-out;
+        }
+        .team-member:hover {
+            background-color: #00ffcc;
+            color: #121212;
+        }
+        .team-member::after {
+            content: '';
+            position: absolute;
+            top: -5px;
+            left: -5px;
+            right: -5px;
+            bottom: -5px;
+            background-color: rgba(0, 255, 204, 0.3);
+            border-radius: 15px;
+            z-index: -1;
+            opacity: 0;
+            transition: opacity 0.3s ease-in-out;
+        }
+        .team-member:hover::after {
+            opacity: 1;
+        }
+        .team-member span {
+            visibility: hidden;
+            position: absolute;
+            top: 100%;
+            left: 50%;
+            transform: translateX(-50%);
+            background-color: #00ffcc;
+            color: #121212;
+            padding: 5px 10px;
+            border-radius: 5px;
+            font-size: 1em;
+            white-space: nowrap;
+            margin-top: 10px;
+        }
+        .team-member:hover span {
+            visibility: visible;
+        }
+        .download-btn {
+            margin-top: 40px;
+            padding: 15px 40px;
+            background-color: #00ffcc;
+            color: #121212;
+            border: none;
+            border-radius: 10px;
+            font-size: 1.5em;
+            cursor: pointer;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            box-shadow: 0 0 10px rgba(0, 255, 204, 0.7);
+            transition: 0.3s ease-in-out;
+        }
+        .download-btn:hover {
+            background-color: #121212;
+            color: #00ffcc;
+            box-shadow: 0 0 20px rgba(0, 255, 204, 0.9);
+        }
+        .version-info {
+            margin-top: 40px;
+            text-align: center;
+            font-size: 1.2em;
+            color: #00ffcc;
+            background-color: #1a1a1a;
+            padding: 20px;
+            border-radius: 10px;
+            border: 2px solid #00ffcc;
+        }
+        .version-info h2 {
+            font-size: 2em;
+            margin-bottom: 10px;
+        }
+        .update-details {
+            font-size: 1.1em;
+            line-height: 1.6;
+            margin-top: 10px;
+        }
+        .update-details li {
+            margin: 5px 0;
+        }
+        footer {
+            margin-top: auto; /* Pushes footer to the bottom */
+            padding: 20px;
+            text-align: center;
+            font-size: 1em;
+            color: #00ffcc;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Project Sharky</h1>
+
+    <div class="team">
+        <div class="team-member m12">
+            m12
+            <span>Coding and Stuff</span>
+        </div>
+        <div class="team-member fischybigpants">
+            Fischybigpants
+            <span>Adding Stuff and Modeling</span>
+        </div>
+        <div class="team-member whafle">
+            Whafle
+            <span>Adding Stuff to the Game</span>
+        </div>
+        <div class="team-member nightmair">
+            Nightmair
+            <span>Modeling</span>
+        </div>
+    </div>
+
+    <div class="version-info">
+        <h2>Current Version: Beta 1.0.1</h2>
+        <div class="update-details">
+            <h3>Recent Updates:</h3>
+            <ul>
+                <li>LAG</li>
+                <li></li>
+                <li></li>
+                <li></li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="team">
+        <div class="team-member m12">
+            m12
+            <span>Coding and Stuff</span>
+        </div>
+        <div class="team-member fischybigpants">
+            Fischybigpants
+            <span>Adding Stuff and Modeling</span>
+        </div>
+        <div class="team-member whafle">
+            Knight
+            <span>Adding Stuff to the Game</span>
+        </div>
+        <div class="team-member nightmair">
+            Nightmair
+            <span>Modeling</span>
+        </div>
+    </div>
+
+    <div class="version-info">
+        <h2>Next Version: Beta 1.0.2 or Non-Beta 1.0.0</h2>
+        <div class="update-details">
+            <h3>What we are working on:</h3>
+            <ul>
+                <li>A map revamp. I think it will be a basement type map.</li>
+                <li>We are also making a horror map.</li>
+                <li>We are trying to add the game to App Lab.</li>
+                <li>FIXING LAG</li>
+            </ul>
+        </div>
+    </div>
+
+    <a href="https://download1474.mediafire.com/fbtu3yhfdkzgkYI3wgZoLLx1S4bJUQpBAREjH9XKA63bcfIbss8w1YenX5HS3ZK3avuoOrVVFuJkvE4ktu5MNiqIiHf38PHK4Re8s8BYhxAq_C6N9KFCrgBhMM_28E9LfKZH1wBenFM9J3EsOk5PbA6zUmu5UEb95dPem0g/s6x061zbibe98ao/ProjectSharky+%281%29.apk" target="_blank">
+        <button class="download-btn">Download Now</button>
+    </a>
+
+    <footer>
+        Official Project Sharky Website
+    </footer>
+
+</body>
+</html>
