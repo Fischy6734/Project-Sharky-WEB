@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>M12 TEAM MEMBER</title>
+    <style>
+        body {
+            background-color: #121212;
+            color: #fff;
+            font-family: 'Courier New', Courier, monospace;
+            margin: 0;
+            padding: 20px; /* Added padding for better spacing */
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            min-height: 100vh; /* Ensures the body takes full height */
+            overflow-y: auto; /* Allows scrolling */
+        }
+        h1 {
+            font-size: 3em;
+            margin-bottom: 20px;
+            text-align: center;
+            text-transform: uppercase;
+            letter-spacing: 5px;
+            color: #00ffcc;
+        }
+        .team {
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            flex-wrap: wrap; /* Allows wrapping of team members */
+        }
+        .team-member {
+            font-size: 1.5em;
+            position: relative;
+            padding: 10px 20px;
+            border: 2px solid #00ffcc;
+            border-radius: 10px;
+            cursor: pointer;
+            transition: 0.3s ease-in-out;
+        }
+        .team-member:hover {
+            background-color: #00ffcc;
+            color: #121212;
+        }
+        .team-member::after {
+            content: '';
+            position: absolute;
+            top: -5px;
+            left: -5px;
+            right: -5px;
+            bottom: -5px;
+            background-color: rgba(0, 255, 204, 0.3);
+            border-radius: 15px;
+            z-index: -1;
+            opacity: 0;
+            transition: opacity 0.3s ease-in-out;
+        }
+        .team-member:hover::after {
+            opacity: 1;
+        }
+        .team-member span {
+            visibility: hidden;
+            position: absolute;
+            top: 100%;
+            left: 50%;
+            transform: translateX(-50%);
+            background-color: #00ffcc;
+            color: #121212;
+            padding: 5px 10px;
+            border-radius: 5px;
+            font-size: 1em;
+            white-space: nowrap;
+            margin-top: 10px;
+        }
+        .team-member:hover span {
+            visibility: visible;
+        }
+        .download-btn {
+            margin-top: 40px;
+            padding: 15px 40px;
+            background-color: #00ffcc;
+            color: #121212;
+            border: none;
+            border-radius: 10px;
+            font-size: 1.5em;
+            cursor: pointer;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            box-shadow: 0 0 10px rgba(0, 255, 204, 0.7);
+            transition: 0.3s ease-in-out;
+        }
+        .download-btn:hover {
+            background-color: #121212;
+            color: #00ffcc;
+            box-shadow: 0 0 20px rgba(0, 255, 204, 0.9);
+        }
+        .version-info {
+            margin-top: 40px;
+            text-align: center;
+            font-size: 1.2em;
+            color: #00ffcc;
+            background-color: #1a1a1a;
+            padding: 20px;
+            border-radius: 10px;
+            border: 2px solid #00ffcc;
+        }
+        .version-info h2 {
+            font-size: 2em;
+            margin-bottom: 10px;
+        }
+        .update-details {
+            font-size: 1.1em;
+            line-height: 1.6;
+            margin-top: 10px;
+        }
+        .update-details li {
+            margin: 5px 0;
+        }
+        footer {
+            margin-top: auto; /* Pushes footer to the bottom */
+            padding: 20px;
+            text-align: center;
+            font-size: 1em;
+            color: #00ffcc;
+        }
+    </style>
+</head>
+<body>
+
+	
+	    <h1>M12</h1>
+
+    <div class="version-info">
+        <h2>What He does</h2>
+        <div class="update-details">
+            
+            <ul>
+              <li>Coding</li>
+              <li>And he makes fan game tuts on youtube.</li>
+              <li>He wont be online alot becus he as other stuff to work on.</li>
+              <li>He is a dev helper.</li>
+            </ul>
+        </div>
+    </div>
