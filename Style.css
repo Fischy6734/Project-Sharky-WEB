@@ -23,3 +23,15 @@
               0 0 50px rgb(0,140,255),
               0 0 100px rgb(0,140,255);
 }
+
+@font-face {
+    font-family: 'NasalizationRg';
+    src: url('fonts/Nasalization Rg.otf') format('opentype');
+}
+
+.nasalization {
+    font-family: 'NasalizationRg', sans-serif;
+    font-size: 24px;
+    color: #333; /* You can change the color */
+}
+
