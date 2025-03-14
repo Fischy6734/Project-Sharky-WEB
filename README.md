@@ -7,13 +7,10 @@ Welcome to the Project Sharky WEB repository! This project is primarily built wi
 - [Introduction](#introduction)
 - [Features](#features)
 - [Installation](#installation)
-- [Usage](#usage)
-- [Contributing](#contributing)
-- [License](#license)
 
 ## Introduction
 
-Project Sharky WEB is a web-based application designed to [brief description of the project's purpose]. The project aims to [goals and objectives].
+Project Sharky WEB is a web-based application designed to [Express are game Project Sharky]. The project aims to [Download The Game].
 
 ## Features
 
