@@ -344,8 +344,31 @@ s0.parentNode.insertBefore(s1,s0);
       </ul>
     </div>
   </div>
+<!-- Chatwee User Count -->
+  <div id="chatwee_user_count"></div>
+  
+  <!-- Chatwee Chat Widget -->
+  <div id="chatwee_container"></div>
 
-<script src="https://chatwee-api.com/v2/script/67d5b9cbc9e91b27725147b2.js"></script>
+  <!-- Chatwee Script -->
+  <script src="https://chatwee-api.com/v2/script/67d5b9cbc9e91b27725147b2.js"></script>
+  <script type="text/javascript">
+    window.chatweeAsyncInit = function() {
+      Chatwee.init({
+        widgetId: '67d5b9cbc9e91b27725147b2',
+        containerId: 'chatwee_container'
+      });
+    };
+    (function(d, s, id){
+      var js, cjs = d.getElementsByTagName(s)[0];
+      if (d.getElementById(id)) {return;}
+      js = d.createElement(s); js.id = id;
+      js.src = "https://chatwee-api.com/v2/script/67d5b9cbc9e91b27725147b2.js";
+      cjs.parentNode.insertBefore(js, cjs);
+    }(document, 'script', 'chatwee-jssdk'));
+  </script>
+</body>
+</html>
   
   <!-- First Padlet Embed (Web Update Log) -->
   <div class="version-info">
