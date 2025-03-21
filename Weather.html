@@ -4,13 +4,39 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     
-<script>
-  function updateDateTime() {
-    const dateTimeElement = document.getElementById('date-time');
-    const now = new Date();
-    const formattedDateTime = now.toLocaleString();
-    dateTimeElement.textContent = formattedDateTime;
-  }
+  <style>
+    /* Additional styles for date-time display */
+    #date-time {
+      font-size: 1.5em;
+      text-align: center;
+      margin-top: 20px;
+      color: #00ffcc;
+    }
+  </style>
+</head>
+<body>
+  <!-- Date and Time Display -->
+  <div id="date-time"></div>
+
+  <!-- Your other content here -->
+
+  <!-- JavaScript for Date and Time Update -->
+  <script>
+    function updateDateTime() {
+      const dateTimeElement = document.getElementById('date-time');
+      const now = new Date();
+      const formattedDateTime = now.toLocaleString();
+      dateTimeElement.textContent = formattedDateTime;
+    }
+
+    // Update the date and time every second
+    setInterval(updateDateTime, 1000);
+
+    // Initial call to display the date and time immediately on load
+    updateDateTime();
+  </script>
+</body>
+</html>
 
   // Update the date and time every second
   setInterval(updateDateTime, 1000);
