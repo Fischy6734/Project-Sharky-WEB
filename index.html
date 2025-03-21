@@ -1,0 +1,399 @@
+<!DOCTYPE html>
+<!--Start of Tawk.to Script-->
+<!--Start of Tawk.to Script-->
+<script type="text/javascript">
+var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
+(function(){
+var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
+s1.async=true;
+s1.src='https://embed.tawk.to/67d5b0d070c69d190c2d3a84/1imdblbvn';
+s1.charset='UTF-8';
+s1.setAttribute('crossorigin','*');
+s0.parentNode.insertBefore(s1,s0);
+})();
+</script>
+<!--End of Tawk.to Script-->
+<html lang="en">
+<head>
+  <head>
+<link rel="stylesheet" href="Style.css">
+    <script src="Balls.js"></script>
+</head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Project Sharky - Hyper Realistic</title>
+  <link rel="icon" type="image/x-icon" href="unnamed (1).ico">
+  <style>
+    /* Base Styles */
+    body {
+      margin: 0;
+      padding: 0;
+      background: #121212;
+      color: #fff;
+      font-family: 'NasalizationRg', NasalizationRg;
+      overflow-x: hidden;
+    }
+
+    /* 3D Parallax Background */
+    .parallax {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      z-index: -1;
+      background: radial-gradient(circle, #001f3f, #000);
+    }
+
+    /* Water Ripple Effect */
+    .ripple {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      background: url('https://www.transparenttextures.com/patterns/water.png') repeat;
+      opacity: 0.5;
+      animation: ripple-animation 10s infinite linear;
+    }
+
+    @keyframes ripple-animation {
+      0% { transform: scale(1); }
+      50% { transform: scale(1.2); }
+      100% { transform: scale(1); }
+    }
+
+    /* Header */
+    h1 {
+      font-size: 4em;
+      text-align: center;
+      text-transform: uppercase;
+      letter-spacing: 5px;
+      color: #00ffcc;
+      text-shadow: 0 0 10px #00ffcc, 0 0 20px #00ffcc, 0 0 30px #00ffcc;
+      margin-top: 100px;
+    }
+
+    /* Team Section */
+    .team {
+      display: flex;
+      justify-content: center;
+      gap: 30px;
+      flex-wrap: wrap;
+      margin-top: 50px;
+    }
+
+    .team-member {
+      position: relative;
+      width: 200px;
+      height: 300px;
+      perspective: 1000px;
+      cursor: pointer;
+    }
+
+    .team-member-inner {
+      position: relative;
+      width: 100%;
+      height: 100%;
+      transition: transform 0.6s;
+      transform-style: preserve-3d;
+      box-shadow: 0 0 20px rgba(0, 255, 204, 0.5);
+    }
+
+    .team-member:hover .team-member-inner {
+      transform: rotateY(180deg);
+    }
+
+    .team-member-front, .team-member-back {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      backface-visibility: hidden;
+      border-radius: 10px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      padding: 20px;
+      background: rgba(0, 0, 0, 0.8);
+      border: 2px solid #00ffcc;
+    }
+
+    .team-member-back {
+      transform: rotateY(180deg);
+      background: rgba(0, 255, 204, 0.1);
+    }
+
+    .team-member h3 {
+      font-size: 1.5em;
+      margin: 10px 0;
+      color: #00ffcc;
+    }
+
+    .team-member p {
+      font-size: 1em;
+      color: #fff;
+    }
+
+    /* Download Button */
+    .download-btn {
+      margin-top: 40px;
+      padding: 15px 40px;
+      background: linear-gradient(45deg, #00ffcc, #00b3ff);
+      color: #121212;
+      border: none;
+      border-radius: 10px;
+      font-size: 1.5em;
+      cursor: pointer;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+      box-shadow: 0 0 20px rgba(0, 255, 204, 0.7);
+      transition: transform 0.3s, box-shadow 0.3s;
+    }
+
+    .download-btn:hover {
+      transform: scale(1.1);
+      box-shadow: 0 0 40px rgba(0, 255, 204, 0.9);
+    }
+
+    /* Version Info */
+    .version-info {
+      margin-top: 40px;
+      text-align: center;
+      font-size: 1.2em;
+      color: #00ffcc;
+      background-color: #1a1a1a;
+      padding: 20px;
+      border-radius: 10px;
+      border: 2px solid #00ffcc;
+    }
+
+    .version-info h2 {
+      font-size: 2em;
+      margin-bottom: 10px;
+    }
+
+    .update-details {
+      font-size: 1.1em;
+      line-height: 1.6;
+      margin-top: 10px;
+    }
+
+    .update-details li {
+      margin: 5px 0;
+    }
+
+    /* Padlet Embed */
+    .padlet-embed {
+      border: 1px solid rgba(0, 0, 0, 0.1);
+      border-radius: 2px;
+      box-sizing: border-box;
+      overflow: hidden;
+      position: relative;
+      width: 100%;
+      background: #F4F4F4;
+    }
+
+    .padlet-embed iframe {
+      width: 100%;
+      height: 608px;
+      display: block;
+      padding: 0;
+      margin: 0;
+    }
+
+    /* Footer */
+    footer {
+      margin-top: 100px;
+      padding: 20px;
+      text-align: center;
+      font-size: 1em;
+      color: #00ffcc;
+      background: rgba(0, 0, 0, 0.5);
+    }
+  </style>
+</head>
+<body>
+  <!-- 3D Parallax Background -->
+  <div class="parallax"></div>
+
+  <!-- Water Ripple Effect -->
+  <div class="ripple"></div>
+
+  <!-- Header -->
+  <h1>Project Sharky</h1>
+
+  <!-- Team Section -->
+  <div class="team">
+    <!-- Fischybigpants -->
+    <div class="team-member">
+      <div class="team-member-inner">
+        <div class="team-member-front">
+          <h3>Fischybigpants</h3>
+          <p>Web Maker / Owner</p>
+        </div>
+        <div class="team-member-back">
+          <p>visionary behind Project Sharky.</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Knight -->
+    <div class="team-member">
+      <div class="team-member-inner">
+        <div class="team-member-front">
+          <h3>Knight</h3>
+          <p>OWNER</p>
+        </div>
+        <div class="team-member-back">
+          <p>Co-founder and project lead.</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Nightmair -->
+    <div class="team-member">
+      <div class="team-member-inner">
+        <div class="team-member-front">
+          <h3>Nightmair</h3>
+          <p>Modeling</p>
+        </div>
+        <div class="team-member-back">
+          <p>3D artist and modeler extraordinaire.</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- SM-Aiden -->
+    <div class="team-member">
+      <div class="team-member-inner">
+        <div class="team-member-front">
+          <h3>SM-Aiden</h3>
+          <p>Developer</p>
+        </div>
+        <div class="team-member-back">
+          <p>Code wizard and gameplay developer.</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- AstronomyF7M -->
+    <div class="team-member">
+      <div class="team-member-inner">
+        <div class="team-member-front">
+          <h3>AstronomyF7M</h3>
+          <p>Music</p>
+        </div>
+        <div class="team-member-back">
+          <p>Composer of immersive soundtracks.</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Ticky -->
+    <div class="team-member">
+      <div class="team-member-inner">
+        <div class="team-member-front">
+          <h3>Ticky</h3>
+          <p>Cover Art & Music</p>
+        </div>
+        <div class="team-member-back">
+          <p>Visual artist and sound designer.</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Covey -->
+    <div class="team-member">
+      <div class="team-member-inner">
+        <div class="team-member-front">
+          <h3>Covey</h3>
+          <p>Web Helper</p>
+        </div>
+        <div class="team-member-back">
+          <p>Web development and design support.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Version Info -->
+  <div class="version-info">
+    <h2>Current Version: 1.0.0</h2>
+    <div class="update-details">
+      <h3>Recent Updates:</h3>
+      <ul>
+        <li>Map Revamp</li>
+        <li>Low Gravity Zone</li>
+        <li>Moderator Vents</li>
+        <li>REALISM.</li>
+        <li>WAY WAY WAY WAY Better Computer.</li>
+        <li>SM-Aiden Is New DEV.</li>
+        <li>Realistic Mirror</li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- Next Version Info -->
+  <div class="version-info">
+    <h2>Next Version: 1.0.1</h2>
+    <div class="update-details">
+      <h3>What we are working on:</h3>
+      <ul>
+        <li>Fixing Discord Proxy</li>
+        <li>Updating Site Visuals</li>
+        <li>CAPUCHIN MOVEMENT</li>
+      </ul>
+    </div>
+  </div>
+<!-- Chatwee User Count -->
+  <div id="chatwee_user_count"></div>
+  
+  <!-- First Padlet Embed (Web Update Log) -->
+  <div class="version-info">
+    <h2>Web Update Log</h2>
+    <div class="update-details">
+      <h3>You will be blacklisted if you add anything to the update log.</h3>
+      <div class="padlet-embed">
+        <iframe src="https://padlet.com/embed/jehqvpd8opzrmmth" frameborder="0" allow="camera;microphone;geolocation"></iframe>
+      </div>
+    </div>
+  </div>
+
+  <!-- Second Padlet Embed (Any Update Requests) -->
+  <div class="version-info">
+    <h2>Any Update Requests</h2>
+    <div class="update-details">
+      <h3>Already added or added recently:</h3>
+      <h3 style="color:DarkRed;">No, you are not requesting that.</h3>
+      <h3 style="color:Purple;">Question</h3>
+      <h3 style="color:Yellow;">Owners Stuff</h3>
+      <div class="padlet-embed">
+        <iframe src="https://padlet.com/embed/jxqniv8k13o6y9sb" frameborder="0" allow="camera;microphone;geolocation"></iframe>
+      </div>
+    </div>
+  </div>
+
+ 
+  <!-- Footer -->
+  <footer>
+    &copy; 2025 Project Sharky Team. All rights reserved.
+  </footer>
+
+  <!-- JavaScript for Parallax and Ripple Effects -->
+  <script>
+    // Parallax Effect
+    document.addEventListener('mousemove', (e) => {
+      const parallax = document.querySelector('.parallax');
+      const x = (window.innerWidth - e.pageX) / 100;
+      const y = (window.innerHeight - e.pageY) / 100;
+      parallax.style.transform = `translate(${x}px, ${y}px)`;
+    });
+
+    // Ripple Effect
+    const ripple = document.querySelector('.ripple');
+    document.addEventListener('mousemove', (e) => {
+      ripple.style.left = `${e.pageX}px`;
+      ripple.style.top = `${e.pageY}px`;
+    });
+  </script>
+</body>
+</html>
