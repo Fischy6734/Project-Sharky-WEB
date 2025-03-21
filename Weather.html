@@ -4,7 +4,20 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     
-<!-- Component components/chead -->
+<script>
+  function updateDateTime() {
+    const dateTimeElement = document.getElementById('date-time');
+    const now = new Date();
+    const formattedDateTime = now.toLocaleString();
+    dateTimeElement.textContent = formattedDateTime;
+  }
+
+  // Update the date and time every second
+  setInterval(updateDateTime, 1000);
+
+  // Initial call to display the date and time immediately on load
+  updateDateTime();
+</script>
 
 <!-- Component components/gtag -->
 <script>
