@@ -8,6 +8,17 @@
   <link rel="icon" type="image/x-icon" href="unnamed (1).ico">
   <link rel="stylesheet" href="Style.css">
   <style>
+            #offline-notification {
+            display: none;
+            position: fixed;
+            top: 0;
+            width: 100%;
+            background-color: red;
+            color: white;
+            text-align: center;
+            padding: 10px;
+            z-index: 1000;
+        }
     /* Base Styles */
     body {
       margin: 0;
@@ -194,6 +205,28 @@
       background: rgba(0, 0, 0, 0.5);
     }
   </style>
+  </head>
+<body>
+    <div id="offline-notification">You are currently offline.</div>
+
+    <script>
+        function updateOnlineStatus() {
+            const notification = document.getElementById('offline-notification');
+            if (navigator.onLine) {
+                notification.style.display = 'none';
+            } else {
+                notification.style.display = 'block';
+            }
+        }
+
+        window.addEventListener('online', updateOnlineStatus);
+        window.addEventListener('offline', updateOnlineStatus);
+
+        // Initial check
+        updateOnlineStatus();
+    </script>
+</body>
+</html>
 </head>
 <body>
   <!-- 3D Parallax Background -->
