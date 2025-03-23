@@ -73,6 +73,36 @@
             50% { transform: translateY(-20px); }
             100% { transform: translateY(0); }
         }
+        .error-codes {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            font-size: 18px;
+            line-height: 1.5;
+            color: rgba(255, 0, 0, 0.5);
+            overflow: hidden;
+            z-index: 1;
+        }
+        .error-codes div {
+            position: absolute;
+            width: 100%;
+            white-space: nowrap;
+            overflow: hidden;
+            animation: scroll 10s linear infinite;
+        }
+        .error-codes div:nth-child(odd) {
+            top: 0;
+            animation-direction: reverse;
+        }
+        .error-codes div:nth-child(even) {
+            bottom: 0;
+        }
+        @keyframes scroll {
+            0% { transform: translateY(100%); }
+            100% { transform: translateY(-100%); }
+        }
     </style>
 </head>
 <body>
@@ -80,6 +110,13 @@
         <source src="https://freesound.org/data/previews/341/341051_3248244-lq.mp3" type="audio/mpeg">
     </audio>
     <div class="ghost"></div>
+    <div class="error-codes">
+        <div>ERROR CODE: 404 - PAGE NOT FOUND</div>
+        <div>ERROR CODE: 404 - PAGE NOT FOUND</div>
+        <div>ERROR CODE: 404 - PAGE NOT FOUND</div>
+        <div>ERROR CODE: 404 - PAGE NOT FOUND</div>
+        <div>ERROR CODE: 404 - PAGE NOT FOUND</div>
+    </div>
     <div class="container">
         <h1>404</h1>
         <p>You have entered a realm of the unknown...</p>
