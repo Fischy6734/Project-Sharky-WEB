@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>404 - Page Not Found</title>
     <style>
+        @import url('https://fonts.googleapis.com/css2?family=Creepster&display=swap');
         body {
             display: flex;
             justify-content: center;
@@ -13,54 +14,77 @@
             margin: 0;
             font-family: 'Creepster', cursive, sans-serif;
             color: #fff;
-            background: url('https://i.imgur.com/oCkEbrA.jpg') no-repeat center center fixed;
+            background: url('https://i.imgur.com/OQ9dO8R.jpg') no-repeat center center fixed;
             background-size: cover;
             text-shadow: 2px 2px 8px #000;
+            overflow: hidden;
         }
         .container {
+            position: relative;
             text-align: center;
-            background-color: rgba(0, 0, 0, 0.7);
-            padding: 40px;
+            background-color: rgba(0, 0, 0, 0.8);
+            padding: 50px;
             border-radius: 10px;
-            box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.7);
+            z-index: 10;
         }
         h1 {
-            font-size: 80px;
+            font-size: 100px;
             margin: 0;
             color: #e74c3c;
             animation: flicker 1.5s infinite alternate;
         }
         p {
             font-size: 24px;
+            margin: 20px 0;
         }
         a {
             display: inline-block;
             margin-top: 30px;
-            padding: 10px 20px;
+            padding: 15px 30px;
             font-size: 20px;
             color: #fff;
             background-color: #e74c3c;
             text-decoration: none;
             border-radius: 5px;
-            box-shadow: 0 0 8px rgba(0, 0, 0, 0.5);
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
         }
         a:hover {
             background-color: #c0392b;
         }
         @keyframes flicker {
             0% { opacity: 1; }
-            50% { opacity: 0.5; }
+            50% { opacity: 0.4; }
             100% { opacity: 1; }
         }
+        .ghost {
+            position: absolute;
+            top: 10%;
+            left: 50%;
+            width: 100px;
+            height: 100px;
+            background: url('https://i.imgur.com/7N7b3pk.png') no-repeat center center;
+            background-size: contain;
+            animation: float 5s ease-in-out infinite, flicker 3s infinite alternate;
+            z-index: 5;
+        }
+        @keyframes float {
+            0% { transform: translateY(0); }
+            50% { transform: translateY(-20px); }
+            100% { transform: translateY(0); }
+        }
     </style>
-    <link href="https://fonts.googleapis.com/css2?family=Creepster&display=swap" rel="stylesheet">
 </head>
 <body>
+    <audio autoplay loop>
+        <source src="https://freesound.org/data/previews/341/341051_3248244-lq.mp3" type="audio/mpeg">
+    </audio>
+    <div class="ghost"></div>
     <div class="container">
         <h1>404</h1>
-        <p>It seems you've wandered into the unknown...</p>
-        <p>The page you were looking for has vanished into thin air.</p>
-        <a href="/">Run back to safety</a>
+        <p>You have entered a realm of the unknown...</p>
+        <p>The page you seek has been lost in the void.</p>
+        <a href="/">Escape while you can</a>
     </div>
 </body>
 </html>
