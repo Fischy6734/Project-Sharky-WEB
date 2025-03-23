@@ -8,16 +8,25 @@
   <link rel="icon" type="image/x-icon" href="unnamed (1).ico">
   <link rel="stylesheet" href="Style.css">
   <style>
-            #offline-notification {
+        #offline-notification {
             display: none;
             position: fixed;
-            top: 0;
-            width: 100%;
+            top: -50px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: auto;
+            padding: 15px 30px;
             background-color: red;
             color: white;
             text-align: center;
-            padding: 10px;
+            border-radius: 25px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
             z-index: 1000;
+            transition: top 0.5s ease-in-out;
+        }
+
+        #offline-notification.show {
+            top: 20px;
         }
     /* Base Styles */
     body {
@@ -206,6 +215,7 @@
     }
   </style>
   </head>
+</head>
 <body>
     <div id="offline-notification">You are currently offline.</div>
 
@@ -213,9 +223,9 @@
         function updateOnlineStatus() {
             const notification = document.getElementById('offline-notification');
             if (navigator.onLine) {
-                notification.style.display = 'none';
+                notification.classList.remove('show');
             } else {
-                notification.style.display = 'block';
+                notification.classList.add('show');
             }
         }
 
@@ -226,6 +236,7 @@
         updateOnlineStatus();
     </script>
 </body>
+</html>
 </html>
 </head>
 <body>
