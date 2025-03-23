@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Page Not Found</title>
+    <title>404 - Page Not Found</title>
     <style>
         body {
             display: flex;
@@ -11,48 +11,56 @@
             align-items: center;
             height: 100vh;
             margin: 0;
-            font-family: 'Arial', sans-serif;
-            background-color: #f4f4f4;
-            color: #333;
+            font-family: 'Creepster', cursive, sans-serif;
+            color: #fff;
+            background: url('https://i.imgur.com/oCkEbrA.jpg') no-repeat center center fixed;
+            background-size: cover;
+            text-shadow: 2px 2px 8px #000;
         }
         .container {
             text-align: center;
-            max-width: 600px;
-            padding: 20px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-            background-color: #fff;
-            border-radius: 8px;
+            background-color: rgba(0, 0, 0, 0.7);
+            padding: 40px;
+            border-radius: 10px;
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
         }
         h1 {
-            font-size: 72px;
+            font-size: 80px;
             margin: 0;
             color: #e74c3c;
+            animation: flicker 1.5s infinite alternate;
         }
         p {
-            font-size: 18px;
-            margin: 20px 0;
+            font-size: 24px;
         }
         a {
             display: inline-block;
-            margin-top: 20px;
+            margin-top: 30px;
             padding: 10px 20px;
-            font-size: 16px;
+            font-size: 20px;
             color: #fff;
-            background-color: #3498db;
+            background-color: #e74c3c;
             text-decoration: none;
-            border-radius: 4px;
+            border-radius: 5px;
+            box-shadow: 0 0 8px rgba(0, 0, 0, 0.5);
         }
         a:hover {
-            background-color: #2980b9;
+            background-color: #c0392b;
+        }
+        @keyframes flicker {
+            0% { opacity: 1; }
+            50% { opacity: 0.5; }
+            100% { opacity: 1; }
         }
     </style>
+    <link href="https://fonts.googleapis.com/css2?family=Creepster&display=swap" rel="stylesheet">
 </head>
 <body>
     <div class="container">
         <h1>404</h1>
-        <p>Oops! The page you were looking for doesn't exist.</p>
-        <p>It might have been moved or deleted.</p>
-        <a href="/">Go Back to Home</a>
+        <p>It seems you've wandered into the unknown...</p>
+        <p>The page you were looking for has vanished into thin air.</p>
+        <a href="/">Run back to safety</a>
     </div>
 </body>
 </html>
