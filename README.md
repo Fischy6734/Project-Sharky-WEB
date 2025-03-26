@@ -7,12 +7,12 @@
 </div>
 <hr>
 <div align="center" style="line-height: 1;">
-  <a href="https://your-website-url.com"><img alt="Website URL"
+  <a href="https://fischy6734.github.io/Project-Sharky-WEB/"><img alt="Website URL"
     src="https://img.shields.io/badge/%F0%9F%A4%97%20Website%20URL-blue?color=ffc107&logoColor=white"/></a>
-  <a href="https://discord-unblocked-link.com"><img alt="Discord Unblocked"
+  <a href="https://fischy6734.github.io/Project-Sharky-WEB/Discord.html"><img alt="Discord Unblocked"
     src="https://img.shields.io/badge/Discord-Unblocked-brightgreen?logo=wechat&logoColor=white"/></a>
   <br>
-  <a href="https://your-sharky-weather-link.com"><img alt="Sharky Weather"
+  <a href="https://fischy6734.github.io/Project-Sharky-WEB/Weather.html"><img alt="Sharky Weather"
     src="https://img.shields.io/badge/Sharky_Weather-Click_Here-blue"/></a>
 </div>
 
