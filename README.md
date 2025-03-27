@@ -3,7 +3,7 @@
 <!-- markdownlint-disable no-duplicate-header -->
 
 <div align="center">
-  <img src="image.png" width="60%" alt="Cover art" />
+  <img src="https://github.com/SharkyStudios/Project-Sharky-WEB/blob/main/image.png" width="60%" alt="Cover art" />
 </div>
 <hr>
 <div align="center" style="line-height: 1;">
